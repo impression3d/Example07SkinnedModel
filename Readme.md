@@ -6,7 +6,7 @@
    *  <code>{path-to}\ContentBuilder.exe build Example07SkinnedModel.Content.xml -t {TargetPlatform}</code> on Windows environment
    *  <code>mono {path-to}\ContentBuilder.exe build Example07SkinnedModel.Content.xml -t {TargetPlatform}</code> on Mac/Linux environment
 
->  Replace <code>{TargetPlatform}</code> with <code>Windows</code>, <code>UniversalWindows</code>, <code>Linux, <code>Mac</code>, <code>Android</code>, or <code>iOS</code>.
+>  Replace <code>{TargetPlatform}</code> with <code>Windows</code>, <code>UniversalWindows</code>, <code>Linux</code>, <code>Mac</code>, <code>Android</code>, or <code>iOS</code>.
 
 ## Running
 1. Open <code>Example07SkinnedModel.sln</code>
