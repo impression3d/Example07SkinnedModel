@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{617af333-875d-4d47-b2a4-fe918540a33e}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Example07SkinnedModel</RootNamespace>
+    <AssemblyName>Example07SkinnedModel</AssemblyName>
+    <ReleaseVersion>0.9.0.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>50929</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Impression.Animations">
+      <HintPath>..\packages\Impression.iOS.0.9.5\lib\Xamarin.iOS\Impression.Animations.dll</HintPath>
+    </Reference>
+    <Reference Include="Impression.Audio">
+      <HintPath>..\packages\Impression.iOS.0.9.5\lib\Xamarin.iOS\Impression.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Impression">
+      <HintPath>..\packages\Impression.iOS.0.9.5\lib\Xamarin.iOS\Impression.dll</HintPath>
+    </Reference>
+    <Reference Include="Impression.Game">
+      <HintPath>..\packages\Impression.iOS.0.9.5\lib\Xamarin.iOS\Impression.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Impression.Graphics">
+      <HintPath>..\packages\Impression.iOS.0.9.5\lib\Xamarin.iOS\Impression.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Impression.Input">
+      <HintPath>..\packages\Impression.iOS.0.9.5\lib\Xamarin.iOS\Impression.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Impression.Media">
+      <HintPath>..\packages\Impression.iOS.0.9.5\lib\Xamarin.iOS\Impression.Media.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Example07SkinnedModel.Platform\Properties.AssemblyInfo.cs">
+      <Link>Properties.AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Example07SkinnedModel.Platform\iOS\MainAppDelegate.cs">
+      <Link>MainAppDelegate.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\Example07SkinnedModel.Platform\iOS\Default-568h%402x.png">
+      <Link>Default-568h%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Platform\iOS\Default.png">
+      <Link>Default.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Platform\iOS\Default%402x.png">
+      <Link>Default%402x.png</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\climbing-left%40Karakter.bin">
+      <Link>Content\Models\Karakter\climbing-left%40Karakter.bin</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\climbing-right%40Karakter.bin">
+      <Link>Content\Models\Karakter\climbing-right%40Karakter.bin</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\climbing-up%40Karakter.bin">
+      <Link>Content\Models\Karakter\climbing-up%40Karakter.bin</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\idle%40Karakter.bin">
+      <Link>Content\Models\Karakter\idle%40Karakter.bin</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\Karakter.bin">
+      <Link>Content\Models\Karakter\Karakter.bin</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\Karakter-diffuse.bin">
+      <Link>Content\Models\Karakter\Karakter-diffuse.bin</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\run%40Karakter.bin">
+      <Link>Content\Models\Karakter\run%40Karakter.bin</Link>
+    </BundleResource>
+    <BundleResource Include="..\Example07SkinnedModel.Content\bin\iOS\Release\Models\Karakter\walk%40Karakter.bin">
+      <Link>Content\Models\Karakter\walk%40Karakter.bin</Link>
+    </BundleResource>
+  </ItemGroup>
+  <Import Project="..\Example07SkinnedModel.Shared\Example07SkinnedModel.Shared.projitems" Label="Shared" Condition="Exists('..\Example07SkinnedModel.Shared\Example07SkinnedModel.Shared.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Impression.iOS.0.9.5\build\Impression.iOS.targets" Condition="Exists('..\packages\Impression.iOS.0.9.5\build\Impression.iOS.targets')" />
+</Project>

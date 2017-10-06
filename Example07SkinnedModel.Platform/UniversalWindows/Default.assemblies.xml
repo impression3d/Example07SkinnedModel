@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Assemblies>
+  <Assembly>Impression, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null</Assembly>
+  <Assembly>Impression.Graphics, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null</Assembly>
+  <Assembly>Impression.Input, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null</Assembly>
+  <Assembly>Impression.Game, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null</Assembly>
+  <Assembly>Impression.Audio, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null</Assembly>
+  <Assembly>Impression.Media, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null</Assembly>
+  <Assembly>Impression.Animations, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null</Assembly>
+</Assemblies>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentProject>
+  <Name>Example07SkinnedModel.Content</Name>
+  <InputDirectory>Example07SkinnedModel.Content</InputDirectory>
+  <OutputDirectory>bin</OutputDirectory>
+  <ContentRootDirectory></ContentRootDirectory>
+  <Configuration>Release</Configuration>
+  <TargetPlatform>Windows</TargetPlatform>
+  <References>
+  </References>
+  <Items>
+  </Items>
+</ContentProject>
