@@ -9,5 +9,14 @@
   <References>
   </References>
   <Items>
+    <Item Include="\Models\Karakter\Karakter.fbx">
+      <Name>Karakter</Name>
+      <BuildAction>Compile</BuildAction>
+      <Importer Name="OpenAssetImporter" />
+      <Processor Name="SkinnedModelProcessor">
+        <StockEffect>SkinnedEffect</StockEffect>
+        <TextureFormat>Compressed</TextureFormat>
+      </Processor>
+    </Item>
   </Items>
 </ContentProject>

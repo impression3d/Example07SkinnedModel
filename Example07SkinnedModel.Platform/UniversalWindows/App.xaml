@@ -1,5 +1,5 @@
 ﻿<Application
-    x:Class="Example.App"
+    x:Class="Example07SkinnedModel.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Example07SkinnedModel"
